@@ -1,0 +1,120 @@
+.icon {
+ fill: currentColor;
+ display: inline-block;
+ padding: 0;
+ margin: 0;
+ line-height: normal;
+    &--individual {
+        width: auto;
+        height: 65%;
+    }
+    &--manager {
+        width: auto;
+        height: 58%;
+        color: white;
+    }
+    &--Arrow-left, &--Arrow-right {
+        width: 48px;
+        height: 48px;
+        z-index: 3;
+    }
+    &--slider-top {
+        display: none;
+        width: 260px;
+        height: 153px;
+        position: absolute;
+        left: 15%;
+        top: -70px;
+    }
+    &--slider-bot {
+        display: none;
+        width: 344px;
+        height: 248px;
+        position: absolute;
+        right: 15%;
+        bottom: -33px;
+        z-index: 1;
+    }
+    &--quotes {
+        width: 36px;
+        height: 28px;
+        color: #713f87;   
+    }
+    &--twitter {
+        width: 24px;
+        height: 24px;
+    }
+    &--linkedin {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.icon-container {
+    width: 85px;
+    height: 85px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@include media-breakpoint-up(sm) {
+    .icon-container {
+        margin: 0 auto 40px auto;
+    }
+}
+@include media-breakpoint-up(md) {
+    .icon-container {
+        width: 140px;
+        height: 140px;
+        border-radius: 32px;
+        margin: 0 auto 50px auto;
+    }
+    .icon {
+        &--slider-top {
+            display: block;
+            left: 0;
+            top: -70px;
+        }
+        &--slider-bot {
+            display: block;
+            right: 15px;
+            bottom: -33px;
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    .icon {
+        &--slider-top {
+            left: 2%;
+            top: -70px;
+        }
+        &--slider-bot {
+            right: 30px;
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    .icon {
+        &--slider-top {
+            left: 8%;
+            top: -70px;
+        }
+        &--slider-bot {
+            right: 15%;
+        }
+    }
+}
+@include media-breakpoint-up(xxl) {
+    .icon {
+        &--slider-top {
+            left: 13%;
+            top: -70px;
+        }
+        &--slider-bot {
+            right: 15%;
+        }
+    }
+}

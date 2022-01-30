@@ -1,0 +1,23 @@
+.footer {
+  a {
+    color: $text-grey;
+    text-decoration: none;
+    &:hover {
+      color: $color-black;  
+    }
+  }
+  padding: 45px 0;
+  font-size: 0.75rem;
+  .footer-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    li {
+      margin-left: 40px;
+    } 
+  } 
+}
